@@ -1,0 +1,629 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+header{
+    background-color: #171B1B;
+    height: 10vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-left: 11%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo > p{
+    font-family: 'Ultra', serif;
+    font-size: 40px;
+}
+
+nav{
+    margin-left: 40px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav > a{
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+header > button{
+    margin: 15px 20px 0px 0px;
+    background-color: #171B1B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 50px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+    border: 1px solid gray;
+    text-transform: uppercase;
+}
+
+.intro{
+    background-color: #171B1B;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.intro-content{
+    margin-top: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.intro-left-side{
+    width: min-content;
+}
+
+.intro-left-side >h1{
+    font-family: 'Ultra', serif;
+    font-weight: lighter;
+    font-size: 72px;
+}
+
+.scroll-down-button{
+    margin-bottom: 50px;
+}
+
+.scroll-down-button > button{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.h1-description{
+    margin-top: 20px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+}
+
+.intro-right-side >img {
+    width: 613px; 
+    height: 583px;
+}
+
+.about-us{
+    background-color: #F5D3AB;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.element {
+    padding-top: 20px;
+    transition: all 0.5s ease;
+}
+
+#h4{
+    font-family: 'Oswald';
+    font-size: 24px;
+    color: #171B1B;
+}
+
+#h5{
+    font-family: 'Oswald';
+    font-size: 16px;
+}
+
+#p1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+}
+
+#p2{
+    font-family: 'DM Sans';
+    color: rgba(51, 51, 51, 0.496405);
+    font-size: 16px;
+}
+
+.about-us-description{
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.buttons-for-switching{
+    margin-right: 50px;
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.buttons-for-switching > button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.our-features{
+    padding: 40px;
+    background-color: #F5D3AB;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.our-features-header{
+    text-align: center;
+}
+
+.feature-cards{
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+
+.card{
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 25vw;
+    height: 40vh;
+    background-color: white;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background-color: #9EAD8D;
+    cursor: pointer;
+}
+
+
+.card > h1{
+    color: #171B1B;
+    font-family: 'Ultra';
+    font-weight: 400;
+}
+
+.card > p{
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(51, 51, 51, 0.496405);
+}
+
+.black-h1{
+    font-family: 'Ultra', serif;
+    font-weight: lighter;
+    font-size: 56px;
+}
+
+.white-h1{
+    font-family: 'Ultra', serif;
+    font-weight: lighter;
+    font-size: 56px;
+    color: white;
+}
+
+.special-moments{
+    margin: 160px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.special-moments-picture > img{
+    width: 613px; 
+    height: 583px;
+}
+
+.our-video {
+    display: flex;
+    justify-content: space-around;
+    background-color: #171B1B;
+    align-items: center;
+    height: 480px;
+}
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.our-video-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.explore-button{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 50px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+    border: 1px solid gray;
+    text-transform: uppercase;
+}
+
+.explore-button-light{
+    background-color: #F5D3AB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 50px;
+    color: black;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+    border: 1px solid gray;
+    text-transform: uppercase;
+}
+
+.our-products{
+    background-color: #F5D3AB;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    padding: 10vh;
+}
+
+.our-products-top{
+    display: flex;
+}
+
+.our-products-wrapper{
+    background-color: #F5D3AB;
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+}
+
+.homemadeBread{
+    background: url("./images/bread.jpg");
+    background-size: cover;
+    object-fit: contain;
+    background-position: center;
+    width: 50vw;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.homemadeBread-content{
+    margin-top: 100px;
+    margin-right: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.homemadeBread-content >p:nth-child(1){
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.homemadeBread-content >p:nth-child(2){
+    font-family: 'Ultra';
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.homemadeBread-content >p:nth-child(3){
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.502972);
+}
+
+.homemadeBread >div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.bread{
+    margin-left: 2vw;
+    width: 24vw;
+    height: 40vh;
+    background-color: white;
+}
+
+.bread-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bread-info{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bread-image-div{
+    height: 25vh;
+}
+
+.bread-image-div > img{
+    width: 100%;
+    height: 100%;
+}
+
+.bread-price{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+
+.bread-info-wrapper{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bread-info-wrapper > div:nth-child(1) > p:nth-child(1){
+    color: #171B1B;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.bread-info-wrapper > div:nth-child(1) > p:nth-child(2){
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 24px;
+    color: #171B1B;
+}
+
+.bread-info-wrapper > div:nth-child(2) >p{
+    font-family: 'Ultra';
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.our-products-bot{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cupcake{
+    width: 24vw;
+    height: 40vh;
+    background-color: white;
+}
+
+.biscuits{
+    margin-left: 2vw;
+    width: 24vw;
+    height: 40vh;
+    background-color: white;
+}
+
+.brioche{
+    margin-left: 2vw;
+    width: 24vw;
+    height: 40vh;
+    background-color: white;
+}
+
+
+.our-products-exploreBtn{
+    display: flex;
+    justify-content: center;
+}
+
+.our-process{
+    height: 100vh;
+    background-color: #171B1B;
+    display: flex;
+    justify-content: center;
+}
+
+.our-process-wrapper{
+    margin-top: 10vh;
+    width: 80vw;
+}
+
+.our-process-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.our-process-header >p{
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.how-we-work{
+    display: flex;
+    justify-content: center;
+}
+
+.card2{
+    margin-top: 10vh;
+    width: 20vw;
+    background-color: white;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card2-wrapper{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card2-wrapper > p{
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: #171B1B;
+}
+
+.card2-description>p:nth-child(1){
+    margin-bottom: 10vh;
+    font-family: 'Ultra';
+    font-weight: 400;
+    font-size: 40px;
+    color: #171B1B;
+}
+
+.card2-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card2-p{
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(51, 51, 51, 0.496405);
+}
+
+.card2:hover {
+    transform: scale(1.1);
+    background-color: #9EAD8D;
+    cursor: pointer;
+}
+
+.our-recipes{
+    height: 120vh;
+    background-color: #171B1B;
+    display: flex;
+    justify-content: center;
+}
+
+.our-recipes-wrapper{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.recipe-cards{
+    display: flex;
+    margin-top: 6vh;
+}
+
+.recipe-cards-right{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+}
+
+.recipe-card-right-top{
+    display: flex;
+}
+
+.recipe-card-right-bot{
+    margin-top: 2vh;
+    display: flex;
+}
+
+.card3{
+    width: 34vw;
+    height: 70vh;
+    background-color: white;
+}
+
+.card4{
+    width: 17vw;
+    height: 34vh;
+    background-color: white;
+}
+
+.bigBoy{
+    background-color: #F5D3AB;
+    height: 2780px;
+}
+
+footer{
+    background-color: #171B1B;
+    color: white;
+    height: 430px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-main{
+    width: 100%;
+    height: 50%;
+    border-bottom: 1px gray solid;
+}
+
+.footer-logo > p{
+    font-family: 'Ultra', serif;
+    font-size: 40px;
+}
+
+
+.oswald{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.oswald-white{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: white;
+}
+

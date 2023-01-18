@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Oswald&family=Ultra&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="logo">
+            <p>BKR</p>
+            <nav>
+                <a href="">About</a>
+                <a href="">Products</a>
+                <a href="">Recipes</a>
+            </nav>
+        </div>
+            <button>contact</button>
+    </header>
+    <div class="intro">
+        <div class="intro-content">
+            <div class="intro-left-side">
+                <p class="oswald">since 1984</p>
+                <h1>Fresh Bakery Everyday</h1>
+                <p class="h1-description">Even the all-powerful pointing has no control <br> about the blind texts it is an almost.</p>
+            </div>
+            <div class="intro-right-side">
+                <img src="./images/Group 1.png" alt="">
+            </div>
+        </div>
+        <div class="scroll-down-button">
+            <button onclick="scrollToAboutUs()"><img src="./images/down.png" alt=""></button>
+        </div>
+    </div>
+    <!-- div for about us -->
+    <div class="about-us" id="aboutUs">
+        <div class="special-moments">
+            <div class="special-moments-picture">
+                <img src="./images/Group 2.png" alt="">
+            </div>
+            <div class="about-us-description">
+                <div class="buttons-for-switching">
+                    <button class="changeP-buttonUp"><img src="./images/up button.png" alt=""></button>
+                    <button class="changeP-buttonDown"><img src="./images/down button.png" alt=""></button>
+                </div>
+                <div class="element-container">
+                    <div>
+                        <p class="oswald">about us</p>
+                        <h1 class="black-h1">Baking Special<br> Moments</h1>
+                    </div>
+                    <p id="p1" class="element">01</p>
+                    <h4 id="h4" class="element">Last view back</h4>
+                    <p id="p2" class="element">She packed her seven versalia, put her initial into<br>the belt and made herself on the way. When she <br> reached the first hills of the Italic</p>
+                    <h5 id="h5-1" class="element">On the skyline</h5>
+                    <h5 id="h5-2" class="element">Pityful a rethoric</h5>
+                    <h5 id="h5-3" class="element">On her way she</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- div for our features -->
+    <div class="our-features">
+        <div class="our-features-header">
+            <p class="oswald">our features</p>
+            <h1 class="black-h1">Baked With Love</h1>
+        </div>
+        <!-- feature cards -->
+        <div class="feature-cards">
+            <a href="https://en.wikipedia.org/wiki/Fresh_food" target="_blank">
+                <div class="card fresh">
+                    <img src="./images/fresh.png" alt="">
+                    <h1>Fresh</h1>
+                    <p>Nothing the copy said could convince<br> her and so it did not take long.</p>
+                </div>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Natural_food" target="_blank">
+                <div class="card natural">
+                    <img src="./images/natural.png" alt="">
+                    <h1>Natural</h1>
+                    <p>Copy Writers ambushed her, made her <br> drunk with Longe and Parole.</p>
+                </div>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Khinkali" target="_blank">
+                <div class="card tasty">
+                    <img src="./images/tasty.png" alt="">
+                    <h1>Tasty</h1>
+                    <p>And if she has not been rewritten, then <br> they are still using her.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- div for video -->
+    <div class="our-video">
+        <video class="bg-video" src="./video/y2mate.com - Bread Basket  Advertisement Video_1080p.mp4" loop></video>
+        <div>
+            <button class="our-video-btn"><img src="./images/play.png" alt=""></button>
+        </div>
+        <div>
+            <p class="oswald-white">our video</p>
+            <h1 class="white-h1">Story Behind<br> Every Piece</h1>
+        </div>
+    </div>
+    <!-- div for our products -->
+    <div class="our-products">
+        <div class="our-products-wrapper">
+            <div class="our-products-header">
+                <p class="oswald">our products</p>
+                <h1 class="black-h1">Baked Fresh<br>Every Morning</h1>
+            </div>
+            <!-- product cards -->
+            <div class="our-products-top">
+                <div class="homemadeBread">
+                    <div class="homemadeBread-content">
+                        <p>BAKERY</p>
+                        <p>Homemade<br>Bread</p>
+                        <p>Flows by their place and supplies it with<br> the necessary regelialia.</p>
+                    </div>
+                    <div>
+                        <p class="white-h1">$9</p>
+                    </div>
+                </div>
+                <div class="bread">
+                    <div class="bread-content">
+                        <div class="bread-image-div">
+                            <img src="./images/THEbread.jpg" alt="">
+                        </div>
+                        <div class="bread-info">
+                            <div class="bread-info-wrapper">
+                                <div>
+                                    <p>BAKERY</p>
+                                    <p>Bread</p>
+                                </div>
+                                <div class="bread-price">
+                                    <p>$5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="our-products-bot">
+                <div class="cupcake">
+                    <div class="bread-content">
+                        <div class="bread-image-div">
+                            <img src="./images/cupcake.jpg" alt="">
+                        </div>
+                        <div class="bread-info">
+                            <div class="bread-info-wrapper">
+                                <div>
+                                    <p>PASTRY</p>
+                                    <p>Cupcake</p>
+                                </div>
+                                <div class="bread-price">
+                                    <p>$3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="biscuits">
+                    <div class="bread-content">
+                        <div class="bread-image-div">
+                            <img src="./images/biscuits.jpg" alt="">
+                        </div>
+                        <div class="bread-info">
+                            <div class="bread-info-wrapper">
+                                <div>
+                                    <p>SWEET</p>
+                                    <p>Biscuits</p>
+                                </div>
+                                <div class="bread-price">
+                                    <p>$2</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="brioche">
+                    <div class="bread-content">
+                        <div class="bread-image-div">
+                            <img src="./images/brioche.jpg" alt="">
+                        </div>
+                        <div class="bread-info">
+                            <div class="bread-info-wrapper">
+                                <div>
+                                    <p>PASTRY</p>
+                                    <p>Brioche</p>
+                                </div>
+                                <div class="bread-price">
+                                    <p>$5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="our-products-exploreBtn">
+                <button class="explore-button-light">explore</button>
+            </div>
+        </div>
+    </div>
+    <!-- div for our process -->
+    <div class="our-process">
+        <div class="our-process-wrapper">
+            <div class="our-process-header">
+                <p>OUR PROCESS</p>
+                <h1 class="white-h1">How We Work</h1>
+            </div>
+            <div class="how-we-work">
+                <div class="card2 contact">
+                    <div class="card2-wrapper">
+                        <p>01</p>
+                        <div class="card2-description">
+                            <p>Contact</p>
+                            <p class="card2-p">Nothing the copy said<br> could convince her and so<br> it did not take long.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card2 baking">
+                    <div class="card2-wrapper">
+                        <p>02</p>
+                        <div class="card2-description">
+                            <p>Baking</p>
+                            <p class="card2-p">The copy said could<br> convince her and so it<br> did not take long.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card2 delivery">
+                   <div class="card2-wrapper">
+                        <p>03</p>
+                        <div class="card2-description">
+                            <p>Delivery</p>
+                            <p class="card2-p">Nothing the copy said<br> could convince her and so<br> it did not take.</p>
+                        </div>
+                   </div>
+                </div>
+                <div class="card2 tasty">
+                    <div class="card2-wrapper">
+                        <p>04</p>
+                        <div class="card2-description">
+                            <p>Tasty</p>
+                            <p class="card2-p">Copy said could convince<br> her and so it did not take<br> long.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="our-recipes">
+            <div class="our-recipes-wrapper">
+                <div class="our-recipes-header">
+                    <p class="oswald-white">our recipes</p>
+                    <h1 class="white-h1">Explore Sweet &<br> Delicious Recipes</h1>
+                </div>
+                <div class="recipe-cards">
+                    <div class="recipe-cards-left">
+                        <div class="card3 deliciousBread">
+   
+                        </div>
+                    </div>
+                    <div class="recipe-cards-right">
+                        <div class="recipe-card-right-top">
+                            <div class="card4 meltedWheat">
+                                
+                            </div>
+                            <div class="card4 biscoffCake">
+            
+                            </div>
+                        </div>
+                        <div class="recipe-card-right-bot">
+                            <div class="card4 peanutButter">
+        
+                            </div>
+                            <div class="card4 maltedWheat">
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="explore-button">explore</button>
+    <div class="bigBoy">
+        <div class="our-baker">
+            <div class="bakerDescription">
+                <p class="oswald">our baker</p>
+                <h1 class="black-h1">Meet Our Professional Baker</h1>
+            </div>
+            <div class="bakerPicture">
+    
+            </div>
+        </div>
+        <div class="testimonials">
+            <p class="oswald">testimonials</p>
+           <h1 class="black-h1">People Say About Our Bakery</h1>
+        </div>
+        <div class="reviews">
+            <div class="card4"></div>
+            <div class="card4"></div>
+            <div class="card4"></div>
+        </div>
+        <div class="get-in-touch">
+            <div class="map">
+    
+            </div>
+            <div class="contact">
+                <p class="oswald">get in touch</p>
+                <h1 class="black-h1">Contact With Us</h1>
+                <div class="adress">
+    
+                </div>
+                <div class="phone">
+    
+                </div>
+                <button class="contact-us"></button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-main">
+            <div class="footer-logo">
+                <p>BKR</p>
+            </div>
+            <div class="menu">
+                <p class="oswald-white">menu</p>
+            </div>
+            <div class="service">
+                <p class="oswald-white">service</p>
+            </div>
+            <div class="social">
+                <p class="oswald-white">social</p>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="copyright">
+
+            </div>
+            <div class="tos-pp">
+
+            </div>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
