@@ -85,9 +85,22 @@ downButton.addEventListener("click", function(){
 
 let btn = document.querySelector('.our-video-btn');
 let video = document.querySelector('.bg-video');
+let description = document.querySelector('.description-for-video');
+
+video.muted = true;
+video.play();
 
 btn.addEventListener('click', function() {
-    video.style.filter = 'none';
-    video.style.opacity = '1';
-    video.play();
+    if(video.muted){
+        video.style.filter = 'none';
+        video.muted = false;
+        video.pause();
+        video.currentTime = 0;
+        video.play();
+        description.style.zIndex= "-1"
+    }else{
+        video.muted=true;
+        video.style.filter = "blur(5px)";
+        description.style.zIndex = "1"
+    }
 });
