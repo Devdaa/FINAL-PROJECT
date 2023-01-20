@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url(Illustration.png);
+    background-color: rgb(111, 111, 255);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+}
+.form-main{
+    margin-top: 60px;
+    margin-right: 60px;
+    background-color: #1F2327;
+    width: 611px;
+    height: 832px;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    background-color: #292E33;
+    width: 451px;
+    height: 432px;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+label{
+    display: block;
+    font-size: 12px;
+    color: #748AA1;
+}
+
+
+input{
+    background-color: #292E33;
+    width: 391px;
+    height: 51px;
+    border: 1px solid #33393F;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+}
+
+.signUp-btn{
+    margin-top: 50px;
+    width: 391px;
+    height: 51px;
+    background-color: #29CB97;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.blue-fb{
+    background-color: #255B9B;
+    width: 204px;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.cyan-fb{
+    background-color: #00ADEE;
+    width: 204px;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+select{
+    width: 391px;
+    height: 51px;
+    background-color: #292E33;
+    color: white;
+    border: 1px solid #33393F;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.wrapper{
+    margin-top: 50px;
+}
+
+.inputElement{
+    margin-top: 10px;
+    height: 74px;
+}
+
+
+.inputElement.success input{
+    border-color: #29CB97;
+}
+
+.inputElement.error input{
+    border-color: rgb(245, 92, 92);
+}
+
+.inputElement .error{
+    color: rgb(245, 92, 92);
+    font-size: 9px;
+    height: 13px;
+}
+
+.half-element > input{
+    background-color: #292E33;
+    width: 180px;
+    height: 51px;
+    border: 1px solid #33393F;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+}
+
+.half-element > label{
+    margin-top: 20px;
+}
+
+.half-element.success input{
+    border-color: #29CB97;
+}
+
+.half-element.error input{
+    border-color: rgb(245, 92, 92);
+}
+
+.half-element .error{
+    color: rgb(245, 92, 92);
+    font-size: 9px;
+    height: 13px;
+}
+
+.botOfForm{
+    width: 391px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fb-buttons{
+    margin-top: 43px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 671px){
+    body{
+        background-image: none;
+        background-color: #1F2327;
+        display: flex;
+        flex-direction: column;
+    }
+}

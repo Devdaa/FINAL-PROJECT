@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <script src="https://kit.fontawesome.com/33900788d8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logoImg">
+                <img src="./images/LOGO.png" alt="logo">
+            </div>
+            <div class="logoDescription">
+                <h1>Weather by VicBox</h1>
+            </div>
+        </div>
+        <div class="about">
+            <a href="https://github.com/Devdaa" target="_blank">GitHub</a>
+            <a href="https://en.wikipedia.org/wiki/Weather" target="_blank">About</a>
+        </div>
+    </header>
+    <main id="mainContent">
+        <div class="card1" id="card1">
+            <div class="card-settings">
+                <div>
+                    <button class="dropdown-button" id="dropdownButton">
+                        <img src="./images/circlesbutton.png" alt="">
+                    </button>
+                    <div class="dropdown-content">
+                        <button class="editBtn">edit</button>
+                        <button class="removeBtn">remove</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-header">
+                <div class="icon-for-weather">
+
+                </div>
+                <div class="card-text">
+                    <p class="area" id="area">Bucharest</p><br>
+                    <div class="editingArea">
+                        
+                    </div>
+                    <p class="date" id="date">Monday 01/01/2023</p>
+                </div>
+            </div>
+            <div class="temp-box">
+                <div class="temperature">
+                    <p id="temp">15<span class="celcius">°c</span></p>
+                </div>
+                <div class="temperature-description">
+                    <p id="description">Mostly Cloudy</p>
+                </div>
+            </div>
+            <div class="info-box">
+                <div class="info-top-side">
+                    <div class="details border">
+                        <img src="images/visibility.png" alt="visibility">
+                        <p>Visibility <span id="visibility"></span></p>
+                    </div>
+                    <div class="details">
+                        <img src="images/feelslike.png" alt="feels like">
+                        <p>Feels like <span id="feelslike"></span></p>
+                    </div>
+                </div>
+                <div class="info-bot-side">
+                    <div class="details border">
+                        <img src="images/humidity.png" alt="humidity">
+                        <p>Humidity <span id="humidity"></span></p>
+                    </div>
+                    <div class="details">
+                        <img src="images/wind.png" alt="wind">
+                        <p>Wind <span id="wind-speed"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card2" id="card2">
+            <div class="add-button" id="addButton">
+                <button class="addBtn">
+                    <img src="images/circle.png" alt="add">
+                    <img src="images/plus.png" alt="add2" id="image2">
+                </button>
+            </div>
+            <div class="add-button-text">
+                <p>Add new location</p>
+            </div>
+            <div class="inputFieldForLocation">
+
+            </div>
+            <div class="inputFieldButton">
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>design is made with love by V. Alvarado</p>
+    </footer>
+    <p class="hah">how do you have such a skinny phone :O</p>
+    <script src="scripts.js"></script>
+</body>
+</html>

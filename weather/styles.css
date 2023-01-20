@@ -1,0 +1,349 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("images/Rectangle\ 2.png");
+    background-size: cover;
+}
+
+header{
+    background: rgba(255, 255, 255, 0.19); 
+    height: 92px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 50px;
+    display: flex;
+}
+
+.logoDescription{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.about{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about > a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.card1{
+    width: 450px;
+    height: 575px;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.2);
+    border-radius: 48px;
+    animation: slideDown 1s;
+}
+
+.card-settings{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+.dropdown-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content > button{
+    color: black;
+    background-color: white; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    width: 70px;
+    height: 35px;
+    border: 1px solid rgb(0, 0, 0, 0.2);;
+    cursor: pointer;
+}
+
+.dropdown-content{
+    position: absolute;
+    display: none;
+    animation: fadeIn 1s;
+}
+
+.card-header{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-text{
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.area{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.date{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.temp-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.temperature{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 144px;
+}
+
+.celcius{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 29px;
+    position: absolute;
+    top: 30px;
+}
+
+.temperature-description{
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.info-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-top-side{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.info-bot-side{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.details{
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.details > img{
+    width: 20px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.border{
+    border-right: 1px solid white;
+}
+
+.card2{
+    width: 450px;
+    height: 575px;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.2);
+    border-radius: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: slideDown 1s;
+}
+
+.add-button{
+    position: relative;
+}
+
+#image2{
+    position: absolute;
+    top: 41px;
+    left: 41px;
+}
+
+.addBtn{ 
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.add-button-text{
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+footer{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color  :white;
+}
+
+.inputField{
+    margin-top: 20px;
+    padding-left: 10px;
+    background: rgba(255, 255, 255, 0.19);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: white;
+    width: 300px;
+    height: 30px;
+    border-radius: 15px 15px 1px 1px;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    outline: none;
+    animation: slideDown 1s;
+}
+
+.addConfirm{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: rgb(0, 0, 0, 0.2);;
+    color: white;
+    width: 300px;
+    height: 30px;
+    border: 1px solid rgb(0, 0, 0, 0.2);;
+    cursor: pointer;
+    border-radius: 1px 1px 15px 15px;
+    animation: slideDown 1s;
+}
+
+.editingArea{
+    display: flex;
+    justify-content: center;
+}
+
+.editInput{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    background-color: transparent;
+    border: 1px solid black;
+    outline: none;
+    animation-name: slideDown;
+    animation-duration: 1s;
+}
+
+.editInputButton{
+    background-color: green;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    width: 30px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid black;
+    animation-name: slideDown;
+    animation-duration: 1s;
+}
+
+.hah{
+    display: none;
+}
+
+@media(max-width: 1000px){
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media(max-width:460px){
+    header{
+        zoom:0.75;
+    }
+    main{
+        zoom:0.75;
+    }
+}
+@media(max-width:300px){
+    main{
+        display: none;
+    }
+    header{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+    .hah{
+        display: block;
+    }
+}
+
+@media(max-height: 950px){
+    header{
+        zoom: 0.75;
+    }
+    main{
+        zoom: 0.75;
+    }
+}
+@media(max-height: 650px){
+    header{
+        zoom: 0.5;
+    }
+    main{
+        zoom: 0.5;
+    }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0%); }
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
