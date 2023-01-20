@@ -6,54 +6,100 @@
 }
 
 body{
-    background-image: url(Illustration.png);
-    background-color: rgb(111, 111, 255);
-    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background: url(./Illustration.png) center ;
+    background-color: rgb(154, 66, 255);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.form-main{
+    width: 80%;
     display: flex;
     justify-content: flex-end;
 }
-.form-main{
-    margin-top: 60px;
-    margin-right: 60px;
-    background-color: #1F2327;
-    width: 611px;
-    height: 832px;
+
+.wrapper{
     color: white;
+    position: relative;
+    width: 500px;
+    background: #1f2327;
     border-radius: 5px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.form-header{
+    width: 80%;
+    margin-top: 40px;
 }
 
 form{
+    width: 80%;
+    position: relative;
     background-color: #292E33;
-    width: 451px;
-    height: 432px;
-    margin-top: 50px;
-    padding-top: 20px;
-    padding-left: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.topOfForm{
+    width: 100%;
+    margin-top: 16px;
+    background: #292e33;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
 }
 
 label{
-    display: block;
+    padding-left: 10px;
+    font-weight: 400;
     font-size: 12px;
+    line-height: 17px;
     color: #748AA1;
 }
 
 
 input{
-    background-color: #292E33;
-    width: 391px;
-    height: 51px;
-    border: 1px solid #33393F;
+    height: 42px;
+    background-color: #292e33;
+    border: 1px solid #33393f;
     border-radius: 5px;
+    margin-top: 6px;
     color: white;
     outline: none;
 }
 
+.botOfForm{
+    width: 100%;
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.half-element {
+    width: 45%;
+}
+  
+.half-element > input {
+    width: 100%;
+}
+
+
 .signUp-btn{
     margin-top: 50px;
-    width: 391px;
-    height: 51px;
+    height: 45px;
     background-color: #29CB97;
     color: white;
     border-radius: 5px;
@@ -61,10 +107,11 @@ input{
     cursor: pointer;
 }
 
+
 .blue-fb{
     background-color: #255B9B;
-    width: 204px;
-    height: 60px;
+    width: 45%;
+    height: 50px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
@@ -73,8 +120,8 @@ input{
 
 .cyan-fb{
     background-color: #00ADEE;
-    width: 204px;
-    height: 60px;
+    width: 45%;
+    height: 50px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
@@ -82,8 +129,7 @@ input{
 }
 
 select{
-    width: 391px;
-    height: 51px;
+    height: 42px;
     background-color: #292E33;
     color: white;
     border: 1px solid #33393F;
@@ -97,13 +143,9 @@ a{
     color: white;
 }
 
-.wrapper{
-    margin-top: 50px;
-}
-
 .inputElement{
-    margin-top: 10px;
-    height: 74px;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -121,41 +163,13 @@ a{
     height: 13px;
 }
 
-.half-element > input{
-    background-color: #292E33;
-    width: 180px;
-    height: 51px;
-    border: 1px solid #33393F;
-    border-radius: 5px;
-    color: white;
-    outline: none;
-}
-
-.half-element > label{
-    margin-top: 20px;
-}
-
-.half-element.success input{
-    border-color: #29CB97;
-}
-
-.half-element.error input{
-    border-color: rgb(245, 92, 92);
-}
-
-.half-element .error{
-    color: rgb(245, 92, 92);
-    font-size: 9px;
-    height: 13px;
-}
-
 .botOfForm{
-    width: 391px;
     display: flex;
     justify-content: space-between;
 }
 
 .fb-buttons{
+    width: 80%;
     margin-top: 43px;
     display: flex;
     justify-content: space-between;
@@ -167,5 +181,16 @@ a{
         background-color: #1F2327;
         display: flex;
         flex-direction: column;
+    }
+    .form-main {
+        width: 100%;
+    }
+    .wrapper {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+    }
+    .topOfForm {
+        margin-top: 20px;
     }
 }

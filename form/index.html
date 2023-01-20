@@ -12,18 +12,19 @@
 </head>
 <body>
     <div class="form-main">
-        <div class="wrapper">
-            <div>
+        <div class="wrapper"> 
+            <div class="form-header">
                 <p style="font-size: 48px">Sign Up</h1>
                 <p style="font-size: 16px; color: #748AA1;">There is no charge upon registration!</p>
             </div>
             <form id="form">
+                <div class="topOfForm">
                     <div class="inputElement">
                         <label for="email">Email Address</label><input type="text" id="email" name="email">
                         <div class="error"></div>
                     </div>
                     <div class="inputElement">
-                        <label>Country<br>
+                        <label for="country">Country</label>
                             <select class="country-select" name="country" id="select">
                                 <option value="Afghanistan">Afghanistan</option>
                                 <option value="Åland Islands">Åland Islands</option>
@@ -270,20 +271,24 @@
                                 <option value="Zambia">Zambia</option>
                                 <option value="Zimbabwe">Zimbabwe</option>
                             </select>
-                        </label>
                         <div class="error"></div>
                     </div>
-                <div class="botOfForm">
-                    <div class="half-element">
-                        <label for="city">City</label><input type="text" id="city">
-                        <div class="error"></div>
+                    <div class="botOfForm">
+                        <div class="half-element">
+                            <div class="inputElement">
+                                <label for="city">City</label><input type="text" id="city">
+                                <div class="error"></div>
+                            </div>
+                        </div>
+                        <div class="half-element">
+                            <div class="inputElement">
+                                <label for="zipcode">Zip Code</label><input type="number" id="zipcode">
+                                <div class="error"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="half-element">
-                        <label for="zipcode">Zip Code</label><input type="number" id="zipcode">
-                        <div class="error"></div>
-                    </div>
+                    <button class="signUp-btn" type="submit">Signup now</button>
                 </div>
-                <button class="signUp-btn" type="submit">Signup now</button>
             </form>
             <div class="fb-buttons">
                 <button class="blue-fb" onclick="location.href='https://www.facebook.com/';">Signup with facebook</button>
