@@ -16,9 +16,9 @@
         <div class="logo">
             <p>BKR</p>
             <nav>
-                <a href="">About</a>
-                <a href="">Products</a>
-                <a href="">Recipes</a>
+                <a href="#aboutUs">About</a>
+                <a href="#ourProducts">Products</a>
+                <a href="#recipes">Recipes</a>
             </nav>
         </div>
             <button>contact</button>
@@ -65,7 +65,7 @@
         </div>
     </div>
     <!-- div for our features -->
-    <div class="our-features">
+    <div class="our-features" id="features">
         <div class="our-features-header">
             <p class="oswald">our features</p>
             <h1 class="black-h1">Baked With Love</h1>
@@ -107,7 +107,7 @@
         </div>
     </div>
     <!-- div for our products -->
-    <div class="our-products">
+    <div class="our-products" id="ourProducts">
         <div class="our-products-wrapper">
             <div class="our-products-header">
                 <p class="oswald">our products</p>
@@ -208,7 +208,7 @@
         </div>
     </div>
     <!-- div for our process -->
-    <div class="our-process">
+    <div class="our-process" id="ourProcess">
         <div class="our-process-wrapper">
             <div class="our-process-header">
                 <p>OUR PROCESS</p>
@@ -254,7 +254,7 @@
             </div>
         </div>
     </div>
-        <div class="our-recipes">
+        <div class="our-recipes" id="recipes">
             <div class="our-recipes-wrapper">
                 <div class="our-recipes-header">
                     <p class="oswald-white">our recipes</p>
@@ -381,7 +381,7 @@
             </div>
             <button class="explore-button">explore</button>
         </div>
-        <div class="our-baker">
+        <div class="our-baker" id="ourBaker">
             <div class="our-baker-wrapper">
                 <div class="our-baker-left-side">
                     <div class="bakerDescription">
@@ -390,8 +390,8 @@
                     </div>
                     <div class="list-of-bakers">
                         <div class="baker-buttons">
-                            <button class="changeP-buttonUp"><img src="./images/up button.png" alt=""></button>
-                            <button class="changeP-buttonDown"><img src="./images/down button.png" alt=""></button>
+                            <button class="baker-changeP-buttonUp"><img src="./images/up button.png" alt=""></button>
+                            <button class="baker-changeP-buttonDown"><img src="./images/down button.png" alt=""></button>
                         </div>
                         <div class="bakers">
                             <p id="baker-p">BAKER</p>
@@ -467,43 +467,86 @@
                 </div>
             </div>
         </div>
-        <div class="get-in-touch">
-            <div class="map">
-    
-            </div>
-            <div class="contact">
-                <p class="oswald">get in touch</p>
-                <h1 class="black-h1">Contact With Us</h1>
-                <div class="adress">
-    
+        <div class="get-in-touch" id="contactUs">
+            <div class="get-in-touch-wrapper">
+                <div class="get-in-touch-wrap">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.4246740486146!2d-0.1630403650811332!3d51.523770252204734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761acf33628211%3A0x445d7677a88322e1!2s221B%20Baker%20St%2C%20London%20NW1%206XE%2C%20UK!5e0!3m2!1sen!2sge!4v1674198170789!5m2!1sen!2sge"
+                         width="500" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="contact2">
+                        <p class="oswald">get in touch</p>
+                        <h1 class="black-h1">Contact<br> With Us</h1>
+                        <div class="contact-info">
+                            <div class="address">
+                                <div>
+                                    <img src="./images/address.png" alt="">
+                                </div>
+                                <div class="contact-details">
+                                    <p>01</p>
+                                    <p>address</p>
+                                    <p>764 Richardson Rd.<br>Bethpage, NY 11714</p>
+                                    <button class="explore-button-light">contact us</button>
+                                </div>
+                            </div>
+                            <div class="phone">
+                                <div>
+                                    <img src="./images/phone.png" alt="">
+                                </div>
+                                <div class="contact-details">
+                                    <p>01</p>
+                                    <p>Phone</p>
+                                    <p style="color: #171B1B;">+1 (234) 567-89-02</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="phone">
-    
-                </div>
-                <button class="contact-us"></button>
             </div>
-        </div>
+            </div>
     <footer>
-        <div class="footer-main">
-            <div class="footer-logo">
-                <p>BKR</p>
-            </div>
-            <div class="menu">
-                <p class="oswald-white">menu</p>
-            </div>
-            <div class="service">
-                <p class="oswald-white">service</p>
-            </div>
-            <div class="social">
-                <p class="oswald-white">social</p>
-            </div>
-        </div>
-        <div class="bottom-footer">
-            <div class="copyright">
-
-            </div>
-            <div class="tos-pp">
-
+        <div class="footer-wrapper">
+            <div class="footer-wrap">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <p>BKR</p>
+                    </div>
+                    <div class="menu">
+                        <p class="oswald-white">menu</p>
+                        <div class="menu-list">
+                            <a href="#aboutUs">About</a>
+                            <a href="#ourProducts">Product</a>
+                            <a href="#recipes">Recipes</a>
+                            <a href="#contactUs">Contact</a>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <p class="oswald-white">service</p>
+                        <div class="menu-list">
+                            <a href="#ourProcess">Bakery</a>
+                            <a href="#ourProcess">Delivery</a>
+                            <a href="#ourProcess">Catering</a>
+                            <a href="#ourProcess">Corporate</a>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <p class="oswald-white">social</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/Sherlock.BBCW" target="_blank"><img src="./images/Facebook.png" alt=""></a>
+                            <a href="https://twitter.com/emydetails/status/1611281177176047616" target="_blank"><img src="./images/Twitter.png" alt=""></a>
+                            <a href="https://www.instagram.com/p/CmUv48DLvxd/" target="_blank"><img src="./images/Instragram.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-footer">
+                    <div class="copyright">
+                        <p>Copyright © 2020 Laaqiq. All Rights Reserved.</p>
+                    </div>
+                    <div class="tos-pp">
+                        <a href="https://twitter.com/en/tos" target="_blank">Terms of Use</a>
+                        <a href="https://twitter.com/en/privacy" target="_blank">Privacy Policy</a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
