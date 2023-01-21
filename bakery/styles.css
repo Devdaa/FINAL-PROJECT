@@ -36,6 +36,13 @@ nav{
     align-items: center;
 }
 
+.menu{
+    background-color: #171B1B;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
 nav > a{
     font-family: 'DM Sans', sans-serif;
     text-decoration: none;
@@ -66,7 +73,7 @@ header >a> button:hover{
 
 .intro{
     background-color: #171B1B;
-    height: 90vh;
+    height: min-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,7 +125,7 @@ header >a> button:hover{
 
 .about-us{
     background-color: #F5D3AB;
-    height: 100vh;
+    height: min-content;
     display: flex;
     justify-content: space-around;
     gap: 50px;
@@ -322,7 +329,7 @@ a{
 
 .our-products{
     background-color: #F5D3AB;
-    height: 150vh;
+    height: min-content;
     display: flex;
     justify-content: center;
     padding: 10vh;
@@ -334,8 +341,8 @@ a{
 
 .our-products-wrapper{
     background-color: #F5D3AB;
-    width: 80vw;
-    height: 100vh;
+    width: 80%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 5vh;
@@ -771,6 +778,10 @@ a{
     color: #171B1B;
 }
 
+.xingYu{
+    margin-top: 5%;
+}
+
 .our-baker{
     background-color: #F5D3AB;
     height: 110vh;
@@ -920,7 +931,7 @@ a{
 }
 
 .get-in-touch{
-    height: 100vh;
+    height: min-content;
     background-color: #F5D3AB;
     display: flex;
     justify-content: center;
@@ -1020,7 +1031,7 @@ a{
 footer{
     color: white;
     background-color: #171B1B;
-    height: 50vh;
+    height: min-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1115,18 +1126,205 @@ footer{
 }
 
 
-@media(max-width:420px){
-    .intro{
-        flex-direction: column-reverse;
+@media(max-width:600px){
+    .intro-left-side>h1{
+        font-size:40px ;
+    }
+    .black-h1{
+        font-size: 40px;
+    }
+    .white-h1{
+        font-size: 40px;
+    }
+    body{
+        zoom: 0.9;
     }
     header{
+        zoom: 0.7;
+    }
+    nav{
         display: none;
+    }
+    .intro-content{
+        flex-direction: column-reverse;
     }
     .bakerPicture{
         display: none;
     }
+    .menu{
+        display: block;
+    }
+    .nav{
+        position: absolute;
+        top: 100%;
+        right: 2%;
+        width: 270px;
+        height: 29vh;
+    }
+    .special-moments{
+        flex-direction: column;
+    }
+    .special-moments-picture{
+        display: flex;
+        justify-content: center;
+    }
+    .fresh{
+        display: none;
+    }
+    .natural{
+        display: none;
+    }
+    .tasty{
+        width: 100%;
+    }
+    .our-video{
+        flex-direction: column;
+    }
+    .our-products{
+        width: 100%;
+        flex-direction: column;
+    }
+    .our-products-wrapper{
+        width: 100%;
+    }
+    .our-products-top{
+        margin: 0;
+        padding: 0;
+        gap: 0;
+        flex-direction: column;
+    }
+    .our-products-bot{
+        margin: 0;
+        padding: 0;
+        gap: 0;
+        flex-direction: column;
+    }
+    .card3-header>p:nth-child(2){
+        font-size: 25px;
+    }
+    .homemadeBread{
+        margin: 0;
+        width: 100vw;
+        zoom: 0.7;
+    }
+    .bread{
+        margin: 0;
+        width: 80vw;
+    }
+    .cupcake{
+        margin: 0;
+        width: 80vw;
+    }
+    .biscuits{
+        margin: 0;
+        width: 80vw;
+    }
+    .brioche{
+        margin: 0;
+        width: 80vw;
+    }
+    .our-process-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .baking{
+        display: none;
+    }
+    .delivery{
+        display: none;
+    }
+    .card2.tasty{
+        display: none;
+    }
+    .contact{
+        width: min-content;
+    }
+    .our-recipes{
+        height: min-content;
+    }
+    .our-recipes-wrapper{
+        flex-direction: column;
+
+    }
+    .recipe-cards{
+        flex-direction: column;
+    }
+    .recipe-card-right-bot{
+        flex-direction: column;
+    }
+    .recipe-card-right-top{
+        flex-direction: column;
+    }
+    .card3{
+        margin: 0;
+        width: 80vw;
+    }
+    .card4{
+        margin: 0;
+        width: 80vw;
+    }
+    .our-baker{
+        flex-direction: column;
+    }
+    .card6{
+        width: max-content;
+        height: min-content;
+    }
+    .second{
+        display: none;
+    }
+    .third{
+        display: none;
+    }
+    .get-in-touch-wrap{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        height: min-content;
+    }
+    .contact-info{
+        margin: 0;
+        flex-direction: column;
+        gap: 0;
+    }
+    .contact-details{
+        margin: 0;
+        padding: 0;
+        gap: 0;
+    }
+    .map{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
     iframe{
-        width: 200px;
-        height: 100px;
+        width: 40%;
+        height: 400px;
+    }
+    .footer-main{
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .bottom-footer{
+        flex-direction: column;
+    }
+    .tos-pp{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media(max-width:336px){
+    .black-h1{
+        font-size: 20px;
+    }
+    .white-h1{
+        font-size: 20px;
     }
 }
